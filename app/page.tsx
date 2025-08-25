@@ -2,16 +2,17 @@
 
 import Hero from "./components/Hero";
 import Navbar from "./components/navbar";
+import POSInterface from "./components/POSInterface";
 
 export default function Home() {
   return (
-    <section className="w-full bg-white py-16 px-6 text-center">
+    <main className="w-full bg-white">
       {/* Navbar */}
       <Navbar />
 
       <Hero />
 
-      
-    </section>
+      <POSInterface />
+    </main>
   );
 }
