@@ -2,15 +2,12 @@ import Image from "next/image";
 
 export default function POSInterface() {
   return (
-    <section className="w-full bg-gray-50 py-20 px-6">
+    <section className="w-full bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            <span 
-              className="relative"
-              style={{ fontFamily: 'Caveat, cursive' }}
-            >
+            <span className="relative font-caveat">
               An interface for efficient and fast service
               <span className="absolute -bottom-2 left-[400px] w-[200px] h-3 bg-blue-500 transform -skew-x-12 opacity-80"></span>
             </span>
@@ -112,6 +109,7 @@ export default function POSInterface() {
           </div>
         </div>
 
+        
         
         
           

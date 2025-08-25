@@ -4,10 +4,7 @@ export default function Hero() {
       <div className="max-w-6xl mx-auto">
         {/* Hero text */}
         <h1 className="text-5xl md:text-7xl font-bold text-gray-900 leading-tight mb-8">
-          <span 
-            className="relative"
-            style={{ fontFamily: 'Caveat, cursive' }}
-          >
+          <span className="relative font-caveat">
             All-in-one Restaurant Management System
             <span className="absolute -bottom-2 left-0 w-full h-3 bg-blue-500 transform -skew-x-12 opacity-80"></span>
           </span>

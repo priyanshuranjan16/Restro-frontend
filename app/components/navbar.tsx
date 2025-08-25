@@ -5,28 +5,33 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-2 px-8 bg-white border-b border-gray-200 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-8 bg-white">
       {/* Logo */}
       <div className="flex items-center">
-        <span 
-          className="text-2xl  text-gray-800"
-          style={{ fontFamily: 'Dancing Script, cursive' }}
-        >
+        <span className="text-2xl font-bold text-gray-800 font-caveat">
           RestroSphere
         </span>
       </div>
 
       {/* Center Navigation Links */}
-      <ul className="hidden md:flex gap-8 text-gray-700 font-medium">
+      <ul className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
         <li className="flex items-center gap-1">
           <Link href="#" className="hover:text-purple-600 transition-colors">Point of Sale</Link>
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </li>
+        
+        {/* Separator */}
+        <div className="w-px h-4 bg-gray-300"></div>
+        
         <li>
-          <Link href="#" className="text-red-600 font-semibold hover:text-red-700 transition-colors">Restaurant</Link>
+          <Link href="#" className="text-purple-600 font-semibold hover:text-purple-700 transition-colors">Restaurant</Link>
         </li>
+        
+        {/* Separator */}
+        <div className="w-px h-4 bg-gray-300"></div>
+        
         <li>
           <Link href="#" className="hover:text-purple-600 transition-colors">Material</Link>
         </li>
@@ -45,7 +50,7 @@ export default function Navbar() {
         </Link>
         <Link
           href="#"
-          className="bg-purple-700 hover:bg-purple-800 text-white px-6 py-2.5 rounded-lg font-medium transition-colors shadow-sm"
+          className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded-lg font-medium transition-colors"
         >
           Free trial
         </Link>
