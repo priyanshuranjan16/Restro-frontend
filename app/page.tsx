@@ -3,6 +3,9 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/navbar";
 import POSInterface from "./components/POSInterface";
+import BusinessNetwork from "./components/BusinessNetwork";
+import WhyChooseRestrosphere from "./components/WhyChooseRestrosphere";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +16,14 @@ export default function Home() {
       <Hero />
 
       <POSInterface />
+
+      
+
+      <BusinessNetwork />
+
+      <WhyChooseRestrosphere />
+
+      <Footer />
     </main>
   );
 }
