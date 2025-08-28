@@ -11,7 +11,7 @@ export default function BusinessNetwork() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: false }}
-      className="w-full bg-gradient-to-b from-white to-gray-50 py-20 px-6"
+      className="w-full bg-gradient-to-b from-white to-gray-50 py-12 sm:py-16 lg:py-20 px-4 sm:px-6"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -20,15 +20,15 @@ export default function BusinessNetwork() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: false }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6">
             <span className="relative font-caveat">
               Multi-Location Business Network
-              <span className="absolute -bottom-2 left-0 w-full h-3 bg-blue-500 transform -skew-x-12 opacity-80"></span>
+              <span className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-2 sm:h-3 bg-blue-500 transform -skew-x-12 opacity-80"></span>
             </span>
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
             Seamlessly manage your restaurant empire across multiple locations
             with our integrated system
           </p>
@@ -52,10 +52,10 @@ export default function BusinessNetwork() {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: false }}
-            className="absolute top-[31%] left-[16%] flex items-center space-x-2"
+            className="absolute top-[31%] left-[8%] sm:left-[16%] flex items-center space-x-1 sm:space-x-2"
           >
-            <div className="w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg" />
-            <span className="bg-blue-500 text-white px-3 py-1 rounded-lg font-medium shadow-md">
+            <div className="w-4 h-4 sm:w-6 sm:h-6 bg-blue-500 rounded-full border-2 sm:border-4 border-white shadow-lg" />
+            <span className="bg-blue-500 text-white px-2 sm:px-3 py-1 rounded-lg font-medium shadow-md text-xs sm:text-sm">
               OUTLET
             </span>
           </motion.div>
@@ -66,10 +66,10 @@ export default function BusinessNetwork() {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: false }}
-            className="absolute top-[21%] right-[24%] flex items-center space-x-2"
+            className="absolute top-[21%] right-[12%] sm:right-[24%] flex items-center space-x-1 sm:space-x-2"
           >
-            <div className="w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg" />
-            <span className="bg-blue-500 text-white px-3 py-1 rounded-lg font-medium shadow-md">
+            <div className="w-4 h-4 sm:w-6 sm:h-6 bg-blue-500 rounded-full border-2 sm:border-4 border-white shadow-lg" />
+            <span className="bg-blue-500 text-white px-2 sm:px-3 py-1 rounded-lg font-medium shadow-md text-xs sm:text-sm">
               HEAD OFFICE
             </span>
           </motion.div>
@@ -80,10 +80,10 @@ export default function BusinessNetwork() {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: false }}
-            className="absolute bottom-[26%] left-[40%] flex items-center space-x-2"
+            className="absolute bottom-[26%] left-[20%] sm:left-[40%] flex items-center space-x-1 sm:space-x-2"
           >
-            <div className="w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg" />
-            <span className="bg-blue-500 text-white px-3 py-1 rounded-lg font-medium shadow-md">
+            <div className="w-4 h-4 sm:w-6 sm:h-6 bg-blue-500 rounded-full border-2 sm:border-4 border-white shadow-lg" />
+            <span className="bg-blue-500 text-white px-2 sm:px-3 py-1 rounded-lg font-medium shadow-md text-xs sm:text-sm">
               CENTRAL KITCHEN
             </span>
           </motion.div>
@@ -94,10 +94,10 @@ export default function BusinessNetwork() {
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
             viewport={{ once: false }}
-            className="absolute bottom-[47%] right-[1%] flex items-center space-x-2"
+            className="absolute bottom-[47%] right-[1%] flex items-center space-x-1 sm:space-x-2"
           >
-            <div className="w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg" />
-            <span className="bg-blue-500 text-white px-3 py-1 rounded-lg font-medium shadow-md">
+            <div className="w-4 h-4 sm:w-6 sm:h-6 bg-blue-500 rounded-full border-2 sm:border-4 border-white shadow-lg" />
+            <span className="bg-blue-500 text-white px-2 sm:px-3 py-1 rounded-lg font-medium shadow-md text-xs sm:text-sm">
               FRANCHISE
             </span>
           </motion.div>

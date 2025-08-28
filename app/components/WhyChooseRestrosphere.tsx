@@ -6,7 +6,7 @@ export default function WhyChooseRestrosphere() {
   const features = [
     {
       icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 2l3.293 3.293a1 1 0 01.293.707V8a1 1 0 01-1 1h-3a1 1 0 01-1-1V3a1 1 0 011-1z" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7l6 6m0-6l-6 6" />
@@ -17,7 +17,7 @@ export default function WhyChooseRestrosphere() {
     },
     {
       icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="3" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 1v6m0 6v6m11-7h-6m-6 0H1" />
           <circle cx="19" cy="5" r="2" />
@@ -30,7 +30,7 @@ export default function WhyChooseRestrosphere() {
     },
     {
       icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
         </svg>
       ),
@@ -39,7 +39,7 @@ export default function WhyChooseRestrosphere() {
     },
     {
       icon: (
-        <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 2l3.293 3.293a1 1 0 01.293.707V8a1 1 0 01-1 1h-3a1 1 0 01-1-1V3a1 1 0 011-1z" />
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5h6m-6 4h6m-6 4h6" />
@@ -56,7 +56,7 @@ export default function WhyChooseRestrosphere() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: false }}
-      className="w-full bg-gray-50 py-5 px-6"
+      className="w-full bg-gray-50 py-8 sm:py-12 lg:py-16 px-4 sm:px-6"
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -65,18 +65,18 @@ export default function WhyChooseRestrosphere() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: false }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             <span className="relative font-caveat">
               Why choose RestroSphere ?
-              <span className="absolute -bottom-2 left-55 w-51 h-3 bg-blue-500 transform -skew-x-12 opacity-80"></span>
+              <span className="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-2 sm:h-3 bg-blue-500 transform -skew-x-12 opacity-80"></span>
             </span>
           </h2>
         </motion.div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -87,8 +87,8 @@ export default function WhyChooseRestrosphere() {
               className="text-center"
             >
               {/* Icon Container */}
-              <div className="relative mb-6 flex justify-center">
-                <div className="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+              <div className="relative mb-4 sm:mb-6 flex justify-center">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-20 lg:h-20 bg-orange-100 rounded-full flex items-center justify-center mb-3 sm:mb-4">
                   <div className="text-orange-500">
                     {feature.icon}
                   </div>
@@ -96,10 +96,10 @@ export default function WhyChooseRestrosphere() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>
