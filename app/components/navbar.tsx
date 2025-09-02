@@ -17,7 +17,7 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 sm:px-6 lg:px-8 bg-white shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-4 px-4 sm:px-6 lg:px-8 bg-white "
     >
       {/* Logo */}
       <Link href="/">
@@ -42,32 +42,32 @@ export default function Navbar() {
       >
         <motion.li 
           whileHover={{ scale: 1.05 }}
-          className="flex items-center gap-1"
+          className="flex items-center"
         >
           <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">Point of Sale</Link>
           <svg className="w-3 h-3 xl:w-4 xl:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            {/* <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /> */}
           </svg>
         </motion.li>
         
         {/* Separator */}
-        <div className="w-px h-4 bg-gray-300"></div>
+        {/* <div className="w-px h-4 bg-gray-300"></div> */}
         
         <motion.li whileHover={{ scale: 1.05 }}>
-          <Link href="#" className="text-purple-600 font-semibold hover:text-purple-700 transition-colors text-sm xl:text-base">Restaurant</Link>
+          <Link href="#" className=" hover:text-purple-700 transition-colors text-sm xl:text-base">Restaurant</Link>
         </motion.li>
         
         {/* Separator */}
-        <div className="w-px h-4 bg-gray-300"></div>
+        {/* <div className="w-px h-4 bg-gray-300"></div> */}
         
-        <motion.li whileHover={{ scale: 1.05 }}>
+        {/* <motion.li whileHover={{ scale: 1.05 }}>
           <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">Material</Link>
+        </motion.li> */}
+        <motion.li whileHover={{ scale: 1.05 }}>
+          <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">Offerings</Link>
         </motion.li>
         <motion.li whileHover={{ scale: 1.05 }}>
-          <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">Q&A</Link>
-        </motion.li>
-        <motion.li whileHover={{ scale: 1.05 }}>
-          <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">Features</Link>
+          <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">FAQ</Link>
         </motion.li>
       </motion.ul>
 
