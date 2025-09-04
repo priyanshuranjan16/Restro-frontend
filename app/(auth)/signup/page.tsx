@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Footer from '../../components/Footer';
 
 export default function SignupPage() {
   const router = useRouter();
@@ -68,8 +69,8 @@ export default function SignupPage() {
       // For now, we'll simulate a successful signup
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Redirect to login page after successful signup
-      router.push('/login');
+      // Redirect to dashboard after successful signup
+      router.push('/dashboard');
     } catch (error) {
       console.error('Signup error:', error);
       setErrors({ general: 'Something went wrong. Please try again.' });
@@ -79,9 +80,10 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div className="bg-white rounded-xl shadow-2xl p-8 border-2 border-purple-600 animate-fade-in-up hover-lift transition-all duration-300">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 flex flex-col">
+      <div className="flex-1 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-md w-full space-y-8">
+          <div className="bg-white rounded-xl shadow-2xl p-8 border-2 border-purple-600 animate-fade-in-up hover-lift transition-all duration-300">
           <div className="text-center">
             <h2 className="mt-2 text-3xl font-extrabold text-gray-900 animate-fade-in font-caveat" style={{animationDelay: '0.1s'}}>
               Join RestroSphere
@@ -309,8 +311,10 @@ export default function SignupPage() {
             </p>
           </div>
         </form>
+          </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
