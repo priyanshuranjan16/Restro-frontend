@@ -5,6 +5,7 @@ import Navbar from "./components/navbar";
 import POSInterface from "./components/POSInterface";
 import BusinessNetwork from "./components/BusinessNetwork";
 import WhyChooseRestrosphere from "./components/WhyChooseRestrosphere";
+import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -22,6 +23,8 @@ export default function Home() {
       <BusinessNetwork />
 
       <WhyChooseRestrosphere />
+
+      <FAQ />
 
       <Footer />
     </main>
