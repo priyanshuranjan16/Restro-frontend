@@ -45,24 +45,18 @@ export default function Navbar() {
           className="flex items-center"
         >
           <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">Point of Sale</Link>
-          <svg className="w-3 h-3 xl:w-4 xl:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            {/* <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /> */}
-          </svg>
+          
+            
+          
         </motion.li>
         
-        {/* Separator */}
-        {/* <div className="w-px h-4 bg-gray-300"></div> */}
+        
         
         <motion.li whileHover={{ scale: 1.05 }}>
           <Link href="#" className=" hover:text-purple-700 transition-colors text-sm xl:text-base">Restaurant</Link>
         </motion.li>
         
-        {/* Separator */}
-        {/* <div className="w-px h-4 bg-gray-300"></div> */}
         
-        {/* <motion.li whileHover={{ scale: 1.05 }}>
-          <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">Material</Link>
-        </motion.li> */}
         <motion.li whileHover={{ scale: 1.05 }}>
           <Link href="#" className="hover:text-purple-600 transition-colors text-sm xl:text-base">Offerings</Link>
         </motion.li>
@@ -79,16 +73,13 @@ export default function Navbar() {
         className="hidden md:flex items-center gap-4 lg:gap-6"
       >
         <motion.div whileHover={{ scale: 1.05 }}>
-          <Link href="#" className="text-gray-600 hover:text-purple-600 transition-colors font-medium text-sm lg:text-base">
+          <Link href="/login" className="text-gray-600 hover:text-purple-600 transition-colors font-medium text-sm lg:text-base">
             Log in
           </Link>
         </motion.div>
         <motion.div whileHover={{ scale: 1.05 }}>
-          <Link
-            href="#"
-            className="bg-purple-600 hover:bg-purple-700 text-white px-4 lg:px-6 py-2 lg:py-2.5 rounded-lg font-medium transition-colors text-sm lg:text-base"
-          >
-            Free trial
+           <Link href="/signup" className="text-gray-600 hover:text-purple-600 transition-colors font-medium text-sm lg:text-base">
+            Sign Up
           </Link>
         </motion.div>
       </motion.div>
@@ -204,18 +195,18 @@ export default function Navbar() {
               {/* Mobile Actions */}
               <div className="p-6 border-t border-gray-200 space-y-3">
                 <Link
-                  href="#"
+                  href="/login"
                   className="block w-full text-center py-3 text-gray-600 hover:text-purple-600 transition-colors font-medium"
                   onClick={toggleMobileMenu}
                 >
-                  Log in
+                  Log In
                 </Link>
                 <Link
-                  href="#"
-                  className="block w-full text-center bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-medium transition-colors"
+                  href="/signup"
+                  className="block w-full text-center py-3 text-gray-600 hover:text-purple-600 transition-colors font-medium"
                   onClick={toggleMobileMenu}
                 >
-                  Free trial
+                  Sign Up
                 </Link>
               </div>
             </div>
